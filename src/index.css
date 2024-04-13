@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply max-w-md mx-auto bg-neutral-900 text-neutral-300
+}
