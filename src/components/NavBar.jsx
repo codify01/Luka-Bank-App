@@ -1,8 +1,13 @@
 import React from 'react'
 import image from '../assets/react.svg'
+import { useLocation } from 'react-router-dom'
 const NavBar = () => {
+
+  const location = useLocation()
+  let isSignUp = location.pathname === '/signup'
+
   return (
-    <div>
+    <div className={isSignUp?"hidden":null}>
         <nav className='flex justify-between bg-neutral-800 text-white items-center px-2 py-4'>
             <img src={image} alt='user avatar' width='5%' className=''/>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

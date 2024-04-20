@@ -1,8 +1,13 @@
 import React from 'react'
+import {useLocation} from 'react-router-dom'
 
 const Footer = () => {
+    
+    const location = useLocation()
+
+    let isSignUp = location.pathname === '/signup'
   return (
-    <div className='flex justify-evenly items-center py- bg-neutral-900 fixed bottom-0 w-full max-w-md rounded-t-3xl'>
+    <div className={isSignUp?"hidden": "flex justify-evenly items-center py- bg-neutral-900 fixed bottom-0 w-full max-w-md rounded-t-3xl"}>
         <div>
             <button className='hover:bg-neutral-800 p-4 rounded-full'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

@@ -26,7 +26,7 @@ const Action = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                 </svg>
                 </button>
-                <p className='font-medium'>Recei    ve</p>
+                <p className='font-medium'>Receive</p>
             </div>
             <div className='text-center'>
                 <button className='bg-neutral-800 p-5 rounded-[100%]'>
